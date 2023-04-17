@@ -48,13 +48,14 @@ public class SockerController {
 		return ResponseEntity.ok(jsonMessage);
 
 	}
-	@MessageMapping("/peerjs/video/{id}")
-	@SendTo("/topic/video/{id}")
-	public ResponseEntity<String> video(@Payload Message message, @DestinationVariable String id) throws Exception {
-		logger.info("registering STOMP endpoints");
-		ObjectMapper objectMapper  = new ObjectMapper();
-		String jsonMessage = objectMapper.writeValueAsString(message);
-		return ResponseEntity.ok(jsonMessage);
-
-	}
+	
+//	@MessageMapping("/peerjs/video/{id}")
+//	@SendTo("/topic/video/{id}")
+//	public ResponseEntity<String> video(@Payload Message message, @DestinationVariable String id) throws Exception {
+//		logger.info("registering STOMP endpoints");
+//		ObjectMapper objectMapper  = new ObjectMapper();
+//		String jsonMessage = objectMapper.writeValueAsString(message);
+//		return ResponseEntity.ok(jsonMessage);
+//
+//	}
 }
