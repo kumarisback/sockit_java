@@ -1,3 +1,2 @@
-https://github.com/kumarisback/sockit_java/blob/main/.github/workflows/maven-publish.yml
-
-# sockit_java
+This is backend repo for this project 
+https://github.com/kumarisback/Webrtc_Reactjs_Typscrip
